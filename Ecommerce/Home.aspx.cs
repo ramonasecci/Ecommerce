@@ -27,7 +27,7 @@ namespace Ecommerce
                     while (dataReader.Read())
                     {
                         content += $@"<div class=""col"">
-                                       <div class=""card h-100 d-flex flex-column justify-content-between"">
+                                       <div class=""c-card card h-100 d-flex flex-column justify-content-between"">
                                                                  <div class=""p-2"">
                                               <img src=""{dataReader["Image"]}"" class=""card-img-top rounded"" alt=""{dataReader["Nome"]}"">
                                           
