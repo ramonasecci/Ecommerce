@@ -1,0 +1,30 @@
+CREATE TABLE Products (
+
+        [ID] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](50) NOT NULL,
+	[Descrizione] [varchar](250) NOT NULL,
+	[Image] [text] NOT NULL,
+	[Prezzo] [decimal](10, 2) NOT NULL,
+);
+
+USE [Ecommerce]
+GO
+
+INSERT INTO [dbo].[Products]
+           ([Nome]
+           ,[Descrizione]
+           ,[Image]
+           ,[Prezzo])
+     VALUES
+           ('Cuffie Wireless', 'Cuffie audio ad alte prestazioni', 'https://m.media-amazon.com/images/I/71fBJd2SVtL._AC_UF1000,1000_QL80_.jpg', 99.99),
+    ('Tastiera meccanica RGB', 'Tastiera da gaming con retroilluminazione personalizzabile', 'https://m.media-amazon.com/images/I/61ywxljNavL._AC_UF1000,1000_QL80_.jpg', 129.99),
+    ('Fotocamera DSLR', 'Fotocamera professionale con obiettivo intercambiabile', 'https://www.tuttodigitale.it/wp-content/uploads/2019/10/CANON-EOS-M50_APRE.jpg', 1499.99),
+    ('Scarpe da corsa', 'Scarpe leggere e confortevoli per la corsa', 'https://images.prismic.io/sportsshoesprod/43f5319a-1c86-49f6-8406-5187debaaf3c_Overpronation-thumbnail.jpg?auto=compress,format&rect=0,0,1280,1280&w=850&h=850', 79.99),
+    ('Libro "Titolo 1"', 'Romanzo avvincente di un autore famoso', 'https://www.elettramagazine.com/wp-content/uploads/2021/01/decorative-reading-concept-scaled.jpg', 19.99),
+    ('Borsa in pelle', 'Borsa elegante e capiente per uso quotidiano', 'https://www.furybags.it/cdn/shop/products/borsa-talia-in-pelle-intrecciata-borsetta-fury-361780.jpg?v=1676569001&width=1214', 129.99),
+    ('Mouse gaming', 'Mouse ottico con DPI regolabili per giocatori', 'https://m.media-amazon.com/images/I/61qN9d08hgL.jpg', 49.99),
+    ('Tavolo da scrivania', 'Tavolo moderno con ampio spazio di lavoro', 'https://www.bbdesign.store/3363-medium_default/tavolo-scrivania-con-piano-in-legno-di-rovere-160-x-60-gambe-in-ferro-stile-industriale.jpg', 199.99),
+    ('Pellicola protettiva per smartphone', 'Protezione antigraffio per schermi di ultima generazione', 'https://m.media-amazon.com/images/I/519tWKH-AnL._AC_UF1000,1000_QL80_.jpg', 9.99),
+    ('Caffettiera automatica', 'Macchina da caffè programmabile con macinacaffè integrato', 'https://www.prezzoforte.it/images/webp/De_Longhi_ECAM_37085SB_239413.webp', 149.99)
+GO
+
